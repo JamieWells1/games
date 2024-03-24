@@ -12,6 +12,7 @@ const generateRaffle = document.getElementById("generate-raffle");
 const raffleNumber = document.getElementById("raffle-number");
 const resetRaffle = document.getElementById("reset-raffle");
 const usedRaffleContainer = document.getElementById("used-raffle-container");
+let sliderValue = document.getElementById("range-slider").value;
 
 generateButton.addEventListener("click", generate);
 resetButton.addEventListener("click", reset);
@@ -143,7 +144,6 @@ function github() {
 }
 
 function updateRange() {
-  sliderValue = document.getElementById("range-slider").value;
   document.getElementById("range-value").innerHTML = `<b>${sliderValue}</b>`;
 }
 
