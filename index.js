@@ -146,3 +146,5 @@ function updateRange() {
   sliderValue = document.getElementById("range-slider").value;
   document.getElementById("range-value").innerHTML = `<b>${sliderValue}</b>`;
 }
+
+// end of code
