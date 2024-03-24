@@ -90,9 +90,9 @@ function generateR() {
   for (let i = 0; i < shuffleLength; i++) {
     let promise = new Promise((resolve, reject) => {
       setTimeout(() => {
-        let n = Math.ceil(Math.random() * 1000);
+        let n = Math.ceil(Math.random() * sliderValue);
         while (usedRaffleNumbers.includes(n)) {
-          n = Math.ceil(Math.random() * 1000);
+          n = Math.ceil(Math.random() * sliderValue);
         }
         if (n < 100 && n >= 10) {
           raffleNumber.innerText = `0${n}`;
